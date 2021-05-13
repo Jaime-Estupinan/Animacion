@@ -1,0 +1,42 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: calc(4350px / 29);
+	height: 150px;
+	background: url(imagenes/1.png);
+	animation: animate 2.8s steps(29) infinite;
+}
+.box_2{
+	position: absolute;
+	top: 50%;
+	right: 80%;
+	transform: translate(-50%,-50%);
+	width: calc(4350px / 29);
+	height: 150px;
+	background: url(imagenes/fi.png);
+	animation: animate 2.8s steps(29) infinite;
+}
+.box_3{
+	position: absolute;
+	top: 50%;
+	left: 89%;
+	transform: translate(-50%,-50%);
+	width: calc(4350px / 29);
+	height: 150px;
+	background: url(imagenes/3.png);
+	animation: animate 2.8s steps(29) infinite;
+}
+@keyframes animate{
+	0%{
+		background-position: 0;
+	}
+	100%{
+		background-position: -4350px;
+	}
+}
